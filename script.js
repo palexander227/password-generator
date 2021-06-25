@@ -38,21 +38,9 @@ function generatePassword(){
           } else {alert("Try again later ?"); 
                     done = true;
                     }
-          }
-
+          }      
+                           
         
-                             
-
-    // prompt for user input
-    /*passwordLength = parseInt(prompt("Select password length. Choose a positive integer between 8 and 128 inclusive."));
-    //test for nonsense
-    if (!passwordLength){
-      alert("This needs a valid input.");     
-    } else if (passwordLength < 8 || passwordLength > 128){
-      passwordLength = parseInt(prompt("That was not a valid option. Please select an integer BETWEEN 8 and 128 inclusive."));
-    } else if (passwordLength < 8 || passwordLength > 128) {alert("Try again")}
-    else{*/
-    
     while (useful === true && done === false){
     includeNumbers = confirm("Include digits 0 - 9 ?");
     includeCharacters = confirm("Include non-alpha-numeric characters like $, % etc. ?");
@@ -73,7 +61,7 @@ function generatePassword(){
     /*If the above confirm yields decide = true, we will repeat from line 24 and line 50 will be 
     ignored on the second run, otherwise move on to construct the string to "sample" from.*/
 
-    // if(decide){generatePassword();}
+ 
 
     var sel = [includeNumbers,includeCharacters,includeUppercase,includeLowercase];
 
